@@ -1,12 +1,11 @@
 package cursoUdemyNelio.chessSystemProject.application;
 
-import cursoUdemyNelio.chessSystemProject.boardgame.Position;
+import cursoUdemyNelio.chessSystemProject.boardgame.Board;
 
 public class Program {
     public static void main(String[] args) {
 
-        Position pos = new Position(3,5);
+        Board board = new Board(8, 8);
 
-        System.out.println(pos);
     }
 }
