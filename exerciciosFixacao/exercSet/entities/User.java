@@ -2,9 +2,10 @@ package cursoUdemyNelio.exerciciosFixacao.exercSet.entities;
 
 import java.util.Objects;
 
-public class User {
+public class User implements Comparable<User> {
 
     private int id;
+    private String teste;
 
     public User(int id) {
         this.id = id;
@@ -16,6 +17,14 @@ public class User {
 
     public void setId(int id) {
         this.id = id;
+    }
+
+    public String getTeste() {
+        return teste;
+    }
+
+    public void setTeste(String teste) {
+        this.teste = teste;
     }
 
     @Override
@@ -30,4 +39,11 @@ public class User {
     public int hashCode() {
         return Objects.hash(id);
     }
+
+    @Override
+    public int compareTo(User o) {
+        return teste.toUpperCase().compareTo(o.getTeste().toUpperCase());
+    }
+
+
 }

@@ -12,6 +12,7 @@ public class Program {
 
         Scanner scan = new Scanner(System.in);
         List<Employee> employees = new ArrayList<>();
+        int bestEmployee;
 
         System.out.print("How many employees will be registered? ");
         int numberOfEmployees = scan.nextInt();
@@ -33,26 +34,20 @@ public class Program {
         System.out.print("Enter the employee ID that will have salary increase: ");
         int id = scan.nextInt();
 
-        Employee bestEmployee = employees.stream()
-                .filter(e -> e.getId() == id)
-                .findFirst()
-                .orElse(null);
+//        Employee bestEmployee = employees.stream()
+//                .filter(e -> e.getId() == id) // lambda expression / arrow fuction
+//                .findFirst()
+//                .orElse(null);
 
-//    public static int hasId(List<Employee> list, int id) {
-//        for (int i = 0; i < list.size(); i++) {
-//            if (list.get(i).getId() == id) {
-//                return i;
-//            }
-//        }
-//        return -1;
-//    }
+        bestEmployee = hasId(employees, id);
 
-        if (bestEmployee == null) {
+
+        if (bestEmployee == -1) {
             System.out.println("This id does not exist!");
         } else {
             System.out.print("Enter the percentage: ");
             double percentage = scan.nextDouble();
-            bestEmployee.increaseSalary(percentage);
+            employees.get(bestEmployee).increaseSalary(percentage);
         }
 
         System.out.println();
@@ -61,5 +56,15 @@ public class Program {
 
         scan.close();
     }
+
+    public static int hasId(List<Employee> list, int id) {
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i).getId() == id) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
 
 }
