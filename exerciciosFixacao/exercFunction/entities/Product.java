@@ -1,4 +1,4 @@
-package cursoUdemyNelio.exerciciosFixacao.exercFunction;
+package cursoUdemyNelio.exerciciosFixacao.exercFunction.entities;
 
 public class Product {
 

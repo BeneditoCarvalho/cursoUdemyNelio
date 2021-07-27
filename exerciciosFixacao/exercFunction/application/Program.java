@@ -1,8 +1,14 @@
-package cursoUdemyNelio.exerciciosFixacao.exercFunction;
+package cursoUdemyNelio.exerciciosFixacao.exercFunction.application;
+
+import cursoUdemyNelio.exerciciosFixacao.exercFunction.entities.Product;
+import cursoUdemyNelio.exerciciosFixacao.exercFunction.services.ProductService;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class Program {
 
@@ -46,6 +52,22 @@ public class Program {
         Double sum = productService.filteredSum(list, p -> p.getName().charAt(0) == 'T');
 
         System.out.println(sum);
+
+        System.out.println("___________________________________________________________");
+
+
+        List<Integer> list02 = Arrays.asList(3, 4, 5, 10, 7);
+        Stream<Integer> st1 = list02.stream().map(x -> x * 10);
+        System.out.println(Arrays.toString(st1.toArray()));
+        int sum02 = list02.stream().reduce(0, (x, y) -> x + y); // reduce(bi-function)
+        System.out.println("Sum = " + sum02);
+
+        list02.stream()
+                .filter(x -> x % 2 == 0)
+                .map(x -> x * 10)
+                .collect(Collectors.toList())
+                .forEach(System.out::println);
+
 
     }
 

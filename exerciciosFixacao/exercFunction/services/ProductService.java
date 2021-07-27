@@ -1,4 +1,6 @@
-package cursoUdemyNelio.exerciciosFixacao.exercFunction;
+package cursoUdemyNelio.exerciciosFixacao.exercFunction.services;
+
+import cursoUdemyNelio.exerciciosFixacao.exercFunction.entities.Product;
 
 import java.util.List;
 import java.util.function.Predicate;
