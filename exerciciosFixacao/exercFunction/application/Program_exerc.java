@@ -41,7 +41,7 @@ public class Program_exerc {
         }
 
         double avg = productList.stream()
-                .map(p -> p.getPrice())
+                .map(Product::getPrice)
                 .reduce(0.0, (x, y) -> x + y) / productList.size();
 
         System.out.println(avg);
@@ -52,7 +52,7 @@ public class Program_exerc {
                 .filter(p -> p.getPrice() < avg) // predicate
                 .map(Product::getName) // function + method reference
                 .sorted(Comparator.comparing(String::toUpperCase)) //comparator method reference
-                .forEach(System.out::println);
+                .forEach(System.out::println);                     //
 
         scan.close();
     }
