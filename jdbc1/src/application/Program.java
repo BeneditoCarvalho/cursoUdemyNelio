@@ -1,6 +1,7 @@
-package application;
+package cursoUdemyNelio.jdbc1.src.application;
 
-import db.DB;
+
+import cursoUdemyNelio.jdbc1.src.db.DB;
 
 import java.sql.Connection;
 
