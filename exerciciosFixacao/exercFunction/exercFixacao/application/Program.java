@@ -3,7 +3,6 @@ package cursoUdemyNelio.exerciciosFixacao.exercFunction.exercFixacao.application
 import cursoUdemyNelio.exerciciosFixacao.exercFunction.exercFixacao.entities.Employee;
 
 import java.io.BufferedReader;
-import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -42,7 +41,7 @@ public class Program {
             employees.stream()
                     .filter(e -> e.getSalary() > salary)
                     .map(e -> e.getEmail())
-                    .sorted(Comparator.comparing(String::toUpperCase))
+                    .sorted(Comparator.comparing(String::toUpperCase)) // ((s1,s2) -> s1.toUpperCase.compareTo(s2)
                     .forEach(System.out::println);
 
             Double sum = employees.stream()
