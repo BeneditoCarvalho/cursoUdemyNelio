@@ -1,4 +1,4 @@
-package db;
+package cursoUdemyNelio.jdbc1.src.db;
 
 import java.io.Serial;
 

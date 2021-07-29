@@ -1,4 +1,4 @@
-package db;
+package cursoUdemyNelio.jdbc1.src.db;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -9,7 +9,7 @@ import java.util.Properties;
 
 public class DB {
 
-    private static Connection connection = null;
+    private static Connection connection;
 
     public static Connection getConnection() {
         if (connection == null) {
