@@ -1,4 +1,4 @@
-package cursoUdemyNelio.jdbc2.src.db;
+package cursoUdemyNelio.jdbc4.src.db;
 
 import java.io.FileInputStream;
 import java.io.IOException;
