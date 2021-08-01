@@ -1,6 +1,7 @@
 package cursoUdemyNelio.jdbc4.src.application;
 
 import cursoUdemyNelio.jdbc4.src.db.DB;
+import cursoUdemyNelio.jdbc4.src.db.DbException;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -26,10 +27,11 @@ public class ProgramUpdate {
 
             rowsAffected = preparedSt.executeUpdate();
 
+            System.out.println("Done! Rows Affectedd: " + rowsAffected);
+
         } catch (SQLException e) {
-            e.printStackTrace();
+            throw new DbException(e.getMessage());
         } finally {
-            System.out.println(rowsAffected);
             DB.closeStatement(preparedSt);
             DB.closeConnection();
         }

@@ -21,7 +21,10 @@ public class ProgramSelect {
             result = statement.executeQuery("select * from seller");
 
             while (result.next()) {
-                System.out.println(result.getInt("Id") + ", " + result.getString("Name"));
+                System.out.println(result.getInt("Id") + " - " + result.getString("Name")
+                        + " - "
+                        + " $ "
+                        + result.getDouble("BaseSalary"));
             }
 
         } catch (SQLException e) {
