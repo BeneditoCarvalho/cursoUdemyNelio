@@ -1,7 +1,7 @@
 package cursoUdemyNelio.jdbc3.src.application;
 
-import cursoUdemyNelio.jdbc2.src.db.DbException;
 import cursoUdemyNelio.jdbc3.src.db.DB;
+import cursoUdemyNelio.jdbc3.src.db.DbException;
 
 import java.sql.Connection;
 import java.sql.Date;

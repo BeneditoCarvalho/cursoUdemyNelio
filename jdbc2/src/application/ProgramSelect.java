@@ -31,7 +31,6 @@ public class ProgramSelect {
         DB.closeStatement(statement);
         DB.closeResultSet(result);
 
-
     }
 
 
