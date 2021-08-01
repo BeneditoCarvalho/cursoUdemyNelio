@@ -1,4 +1,4 @@
-package cursoUdemyNelio.jdbc4.src.application;
+package cursoUdemyNelio.jdbc5.src.application;
 
 import cursoUdemyNelio.jdbc5.src.db.DB;
 import cursoUdemyNelio.jdbc5.src.db.DbIntegrityException;
@@ -8,8 +8,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class ProgramDelete {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
 
@@ -24,12 +24,13 @@ public class ProgramDelete {
 
             System.out.println(rowsAffected);
 
-        } catch (SQLException e) {
+        } catch (
+                SQLException e) {
             throw new DbIntegrityException(e.getMessage());
         } finally {
             DB.closeStatement(preparedStatement);
             DB.closeConnection();
         }
-
     }
+
 }

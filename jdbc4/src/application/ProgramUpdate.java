@@ -1,6 +1,6 @@
-package cursoUdemyNelio.jdbc5.src.application;
+package cursoUdemyNelio.jdbc4.src.application;
 
-import cursoUdemyNelio.jdbc5.src.db.DB;
+import cursoUdemyNelio.jdbc4.src.db.DB;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
