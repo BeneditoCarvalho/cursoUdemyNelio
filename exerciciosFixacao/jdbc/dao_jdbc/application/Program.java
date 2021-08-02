@@ -5,6 +5,7 @@ import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.dao.SellerDao;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.entities.Department;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.entities.Seller;
 
+import java.util.Date;
 import java.util.List;
 
 public class Program {
@@ -31,6 +32,16 @@ public class Program {
             System.out.println(s);
         }
 
+        System.out.println("\n==== TEST #4: seller insertSeller ====");
+        Seller seller1 = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.0, department);
+        sellerDao.insert(seller1);
+
+        System.out.println(seller1.getId());
+
     }
 
 }
+
+
+
+
