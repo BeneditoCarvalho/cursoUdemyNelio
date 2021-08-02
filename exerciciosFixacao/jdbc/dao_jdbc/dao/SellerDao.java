@@ -1,5 +1,6 @@
 package cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.dao;
 
+import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.entities.Department;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.entities.Seller;
 
 import java.util.List;
@@ -15,6 +16,8 @@ public interface SellerDao {
     Seller findById(Integer id);
 
     List<Seller> findAll();
+
+    List<Seller> findByDepartment(Department department);
 
 
 }
