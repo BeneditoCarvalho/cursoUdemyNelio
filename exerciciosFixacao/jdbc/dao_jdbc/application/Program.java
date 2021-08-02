@@ -41,13 +41,12 @@ public class Program {
         System.out.println("\n==== TEST #5: seller updateSeller ====");
         Seller seller2 = new Seller(13, "Joao Bobao", "joao@gmail.com", new Date(), 10000.0, department);
         sellerDao.update(seller2);
+        System.out.println("Update Complete!");
 
+        System.out.println("\n==== TEST #6: seller delete ====");
+        sellerDao.deleteById(12);
         System.out.println("Update Complete!");
 
     }
 
 }
-
-
-
-
