@@ -1,4 +1,4 @@
-package cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.dao_entities;
+package cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.dao;
 
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.entities.Seller;
 
