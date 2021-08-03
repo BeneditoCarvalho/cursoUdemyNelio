@@ -1,6 +1,7 @@
 package cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.application;
 
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.dao.DaoFactory;
+import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.dao.DepartmentDao;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.dao.SellerDao;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.entities.Department;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.entities.Seller;

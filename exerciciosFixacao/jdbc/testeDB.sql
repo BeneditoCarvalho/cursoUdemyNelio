@@ -1,1 +1,1 @@
-select * from seller
+select * from department

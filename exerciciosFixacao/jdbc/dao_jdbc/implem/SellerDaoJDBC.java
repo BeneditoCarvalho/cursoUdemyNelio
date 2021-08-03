@@ -1,8 +1,8 @@
 package cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.implem;
 
-import cursoUdemyNelio.exerciciosFixacao.jdbc.dao.DbException;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.dao.SellerDao;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.db.DB;
+import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.db.DbException;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.entities.Department;
 import cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.entities.Seller;
 

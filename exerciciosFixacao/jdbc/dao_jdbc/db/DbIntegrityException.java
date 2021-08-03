@@ -1,4 +1,4 @@
-package cursoUdemyNelio.exerciciosFixacao.jdbc.dao;
+package cursoUdemyNelio.exerciciosFixacao.jdbc.dao_jdbc.db;
 
 import java.io.Serial;
 

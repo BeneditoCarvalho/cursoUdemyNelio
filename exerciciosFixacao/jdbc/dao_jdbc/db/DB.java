@@ -16,7 +16,7 @@ public class DB {
                 String url = properties.getProperty("dburl");
                 connection = DriverManager.getConnection(url, properties);
             } catch (SQLException e) {
-                throw new cursoUdemyNelio.exerciciosFixacao.jdbc.dao.DbException(e.getMessage());
+                throw new DbException(e.getMessage());
             }
         }
         return connection;
@@ -28,7 +28,7 @@ public class DB {
             properties = new Properties();
             properties.load(fs);
         } catch (IOException e) {
-            throw new cursoUdemyNelio.exerciciosFixacao.jdbc.dao.DbException(e.getMessage());
+            throw new DbException(e.getMessage());
         }
         return properties;
     }
@@ -38,7 +38,7 @@ public class DB {
             try {
                 connection.close();
             } catch (SQLException e) {
-                throw new cursoUdemyNelio.exerciciosFixacao.jdbc.dao.DbException(e.getMessage());
+                throw new DbException(e.getMessage());
             }
         }
     }
@@ -48,7 +48,7 @@ public class DB {
             try {
                 statement.close();
             } catch (SQLException e) {
-                throw new cursoUdemyNelio.exerciciosFixacao.jdbc.dao.DbException(e.getMessage());
+                throw new DbException(e.getMessage());
             }
         }
     }
@@ -58,7 +58,7 @@ public class DB {
             try {
                 resultSet.close();
             } catch (SQLException e) {
-                throw new cursoUdemyNelio.exerciciosFixacao.jdbc.dao.DbException(e.getMessage());
+                throw new DbException(e.getMessage());
             }
         }
     }
